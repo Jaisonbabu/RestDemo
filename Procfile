@@ -1,1 +1,1 @@
-web: mvn clean heroku:deploy
+web: java -jar target/main-0.0.1-SNAPSHOT.jar

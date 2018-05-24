@@ -1,0 +1,2 @@
+web: java $JAVA_OPTS -jar
+							C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo\target/main-0.0.1-SNAPSHOT.jar

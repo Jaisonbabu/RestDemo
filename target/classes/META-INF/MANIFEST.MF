@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: RestDemo
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: jbabu001
+Implementation-Vendor-Id: org.cisco
+Build-Jdk: 1.8.0_161
+Implementation-URL: http://projects.spring.io/spring-boot/main/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
