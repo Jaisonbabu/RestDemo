@@ -1,3 +1,10 @@
+/target/dependency
+/target/generated-sources
+/target/generated-testsources
+/heroku
+/maven-archiver
+/maven-status
+/surefire-reports
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
