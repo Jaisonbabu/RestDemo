@@ -1,8 +1,8 @@
-The Rest Demo API is a Spring Boot Project.
+The Rest Demo App is a Spring Boot Project.
 
 To clone this project : git clone https://github.com/Jaisonbabu/RestDemo.git
 
-The build instructions.
+Please follow the below build instructions:
 
 1. Install Maven
 2. mvn clean
