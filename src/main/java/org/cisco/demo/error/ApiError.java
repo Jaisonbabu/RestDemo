@@ -14,84 +14,84 @@ public class ApiError {
 	private String timestamp;
 	private String message;
 	private String debugMessage;
-	
+
 	private ApiError() {
-	       timestamp = LocalDateTime.now().toString();
-	   }
+		timestamp = LocalDateTime.now().toString();
+	}
 
-	   ApiError(HttpStatus status) {
-	       this();
-	       this.status = status;
-	   }
+	public ApiError(HttpStatus status) {
+		this();
+		this.status = status;
+	}
 
-	   ApiError(HttpStatus status, String message, String path) {
-	       this();
-	       this.status = status;
-	       this.message = message;
-	       this.setPath(path);
-	   }
-	   
-		/**
-		 * @return the status
-		 */
-		public HttpStatus getStatus() {
-			return status;
-		}
+	public ApiError(HttpStatus status, String message, String path) {
+		this();
+		this.status = status;
+		this.message = message;
+		this.setPath(path);
+	}
 
-		/**
-		 * @param status the status to set
-		 */
-		public void setStatus(HttpStatus status) {
-			this.status = status;
-		}
+	/**
+	 * @return the status
+	 */
+	public HttpStatus getStatus() {
+		return status;
+	}
 
-		/**
-		 * @return the timestamp
-		 */
-		public String getTimestamp() {
-			return timestamp;
-		}
+	/**
+	 * @param status the status to set
+	 */
+	public void setStatus(HttpStatus status) {
+		this.status = status;
+	}
 
-		/**
-		 * @param timestamp the timestamp to set
-		 */
-		public void setTimestamp(String timestamp) {
-			this.timestamp = timestamp;
-		}
+	/**
+	 * @return the timestamp
+	 */
+	public String getTimestamp() {
+		return timestamp;
+	}
 
-		/**
-		 * @return the message
-		 */
-		public String getMessage() {
-			return message;
-		}
+	/**
+	 * @param timestamp the timestamp to set
+	 */
+	public void setTimestamp(String timestamp) {
+		this.timestamp = timestamp;
+	}
 
-		/**
-		 * @param message the message to set
-		 */
-		public void setMessage(String message) {
-			this.message = message;
-		}
+	/**
+	 * @return the message
+	 */
+	public String getMessage() {
+		return message;
+	}
 
-		/**
-		 * @return the debugMessage
-		 */
-		public String getDebugMessage() {
-			return debugMessage;
-		}
+	/**
+	 * @param message the message to set
+	 */
+	public void setMessage(String message) {
+		this.message = message;
+	}
 
-		/**
-		 * @param debugMessage the debugMessage to set
-		 */
-		public void setDebugMessage(String debugMessage) {
-			this.debugMessage = debugMessage;
-		}
+	/**
+	 * @return the debugMessage
+	 */
+	public String getDebugMessage() {
+		return debugMessage;
+	}
 
-		public String getPath() {
-			return path;
-		}
+	/**
+	 * @param debugMessage the debugMessage to set
+	 */
+	public void setDebugMessage(String debugMessage) {
+		this.debugMessage = debugMessage;
+	}
 
-		public void setPath(String path) {
-			this.path = path;
-		}
+	public String getPath() {
+		return path;
+	}
+
+	public void setPath(String path) {
+		this.path = path;
+	}
 }
