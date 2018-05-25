@@ -11,6 +11,7 @@ import org.apache.logging.log4j.Logger;
 import org.cisco.demo.dao.ClientDao;
 import org.cisco.demo.dao.injector.ClientCacheDaoInjector;
 import org.cisco.demo.dao.injector.ClientDaoInjector;
+import org.cisco.demo.exceptions.ObjectNotFoundException;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -44,25 +45,34 @@ public class ClientServiceImpl implements ClientService {
 	}
 
 	@Override
-	public Map<String, String> update(String uuid, HashMap<String, String> jsonObj) {
+	public Map<String, String> update(String uuid, HashMap<String, String> jsonObj) throws ObjectNotFoundException {
 		logger.debug("ClientServiceImpl : update");
-		HashMap<String, String> newJsonObj = new HashMap<String, String>();
-		if(uuid != null && jsonObj.get(uuid) != null) {
-			
-		}
-		newJsonObj = clientDao.updateStore(jsonObj,uuid);
-		return newJsonObj;
+		Map<String,HashMap<String, String>> objStore = clientDao.getObjStore();
+			if (uuid != null && !objStore.containsKey(uuid)) {
+				throw new ObjectNotFoundException("This object id does not exist");
+			}
+			HashMap<String, String> newJsonObj = new HashMap<String, String>();
+			newJsonObj = clientDao.updateStore(jsonObj,uuid);
+			return newJsonObj;
 	}
 
 	@Override
-	public Map<String, String> getObjectById(String objectId) {
+	public Map<String, String> getObjectById(String objectId) throws ObjectNotFoundException {
 		logger.debug("ClientServiceImpl : getObjectById");
+		Map<String,HashMap<String, String>> objStore = clientDao.getObjStore();
+		if (objectId != null && !objStore.containsKey(objectId)) {
+			throw new ObjectNotFoundException("This object id does not exist");
+		}
 		return clientDao.getObjectById(objectId);
 	}
 
 	@Override
-	public void deleteObjectById(String objectId) {
+	public void deleteObjectById(String objectId) throws ObjectNotFoundException {
 		logger.debug("ClientServiceImpl : deleteObjectById");
+		Map<String,HashMap<String, String>> objStore = clientDao.getObjStore();
+		if (objectId != null && !objStore.containsKey(objectId)) {
+			throw new ObjectNotFoundException("This object id does not exist");
+		}
 		clientDao.deleteObject(objectId);
 	}
 

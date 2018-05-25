@@ -4,6 +4,7 @@ org\cisco\demo\error\ApiError.class
 org\cisco\demo\dao\ObjectStoreCacheImpl$1.class
 org\cisco\demo\dao\ClientDao.class
 org\cisco\demo\controllers\ClientController.class
+org\cisco\demo\exceptions\ObjectNotFoundException.class
 org\cisco\demo\error\RestExceptionHandler.class
 org\cisco\demo\service\ClientServiceImpl.class
 org\cisco\demo\dao\ObjectStore.class

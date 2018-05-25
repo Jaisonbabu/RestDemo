@@ -23,6 +23,13 @@ public class ApiError {
 		this();
 		this.status = status;
 	}
+	
+	public ApiError(HttpStatus status, String message) {
+		this();
+		this.status = status;
+		this.message = message;
+	}
+
 
 	public ApiError(HttpStatus status, String message, String path) {
 		this();

@@ -4,8 +4,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.validation.Valid;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.cisco.demo.exceptions.ObjectNotFoundException;
 import org.cisco.demo.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -28,26 +31,26 @@ public class ClientController {
 	ClientService clientservice;
 
 	@PostMapping(value="/objects", produces= MediaType.APPLICATION_JSON_VALUE)
-	public Map<String, String> create(@RequestBody HashMap<String, String> jsonObj ) {
+	public Map<String, String> create(@Valid @RequestBody HashMap<String, String> jsonObj ) {
 		logger.info("ClientController : create");
 		System.out.println(jsonObj.get("user"));
 		return clientservice.create(jsonObj);	
 	}
 
 	@PutMapping(value="/objects/{objectId}", produces= MediaType.APPLICATION_JSON_VALUE)
-	public Map<String, String> update(@PathVariable String objectId, @RequestBody HashMap<String, String> jsonObj) {
+	public Map<String, String> update(@PathVariable String objectId, @RequestBody HashMap<String, String> jsonObj) throws ObjectNotFoundException {
 		logger.info("ClientController : update ");
 		return clientservice.update(objectId,jsonObj);	
 	}
 	
 	@GetMapping(value="/objects/{objectId}", produces= MediaType.APPLICATION_JSON_VALUE)
-	public Map<String, String> getObjectById(@PathVariable String objectId) {
+	public Map<String, String> getObjectById(@PathVariable String objectId) throws ObjectNotFoundException {
 		logger.info("ClientController : getObjectById");
 		return clientservice.getObjectById(objectId);	
 	}
 	
 	@DeleteMapping(value="/objects/{objectId}")
-	public void deleteObjectById(@PathVariable String objectId) {
+	public void deleteObjectById(@PathVariable String objectId) throws ObjectNotFoundException {
 		logger.info("ClientController : deleteObjectById");
 		clientservice.deleteObjectById(objectId);	
 	}

@@ -3,6 +3,7 @@ package org.cisco.demo.error;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.cisco.demo.controllers.ClientController;
+import org.cisco.demo.exceptions.ObjectNotFoundException;
 import org.cisco.demo.service.ClientServiceImpl;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
@@ -31,13 +32,19 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler{
 		ApiError apierror = new ApiError(HttpStatus.BAD_REQUEST, errorMessage, path);
 		return buildResponseEntity(apierror);
 	}
-
+	
+	@ExceptionHandler(ObjectNotFoundException.class)
+	protected ResponseEntity<Object> handleObjectNotFoundException( ObjectNotFoundException ex) {
+		logger.error("ClientController : handleObjectNotFoundException");
+		ApiError apierror = new ApiError(HttpStatus.NOT_FOUND, ex.getErrorMessage());
+		return buildResponseEntity(apierror);
+	}
+	
 	@ExceptionHandler(Exception.class)
-	protected ResponseEntity<Object> handleException( Exception ex, HttpHeaders headers, WebRequest request) {
+	protected ResponseEntity<Object> handleException( Exception ex) {
 		logger.error("ClientController : handleException");
 		String errorMessage = "Unhandled Exception occurred";
-		String path = getPath(request.getDescription(false));
-		ApiError apierror = new ApiError(HttpStatus.INTERNAL_SERVER_ERROR, errorMessage, path);
+		ApiError apierror = new ApiError(HttpStatus.INTERNAL_SERVER_ERROR, errorMessage);
 		return buildResponseEntity(apierror);
 	} 
 	
