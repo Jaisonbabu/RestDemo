@@ -1,0 +1,373 @@
+2018-05-24 14:00:05.956  INFO 17812 --- [main] org.cisco.demo.RestDemoApplication       : Starting RestDemoApplication on JBABU001055241 with PID 17812 (C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo\target\classes started by jbabu001 in C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo)
+2018-05-24 14:00:05.967  INFO 17812 --- [main] org.cisco.demo.RestDemoApplication       : No active profile set, falling back to default profiles: default
+2018-05-24 14:00:06.098  INFO 17812 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6293abcc: startup date [Thu May 24 14:00:06 EDT 2018]; root of context hierarchy
+2018-05-24 14:00:10.528  INFO 17812 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-05-24 14:00:10.564  INFO 17812 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-24 14:00:10.569  INFO 17812 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-05-24 14:00:11.019  INFO 17812 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-24 14:00:11.021  INFO 17812 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4931 ms
+2018-05-24 14:00:11.466  INFO 17812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-24 14:00:11.469  INFO 17812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-24 14:00:11.470  INFO 17812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-24 14:00:11.471  INFO 17812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-24 14:00:11.476  INFO 17812 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-05-24 14:00:11.478  INFO 17812 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-24 14:00:11.608  WARN 17812 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientController': Unsatisfied dependency expressed through field 'clientservice'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.cisco.demo.service.ClientService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-05-24 14:00:11.616  INFO 17812 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-05-24 14:00:11.661  INFO 17812 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-05-24 14:00:11.933 ERROR 17812 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field clientservice in org.cisco.demo.controllers.ClientController required a bean of type 'org.cisco.demo.service.ClientService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.cisco.demo.service.ClientService' in your configuration.
+
+2018-05-24 15:18:52.453  INFO 17776 --- [main] org.cisco.demo.RestDemoApplication       : Starting RestDemoApplication on JBABU001055241 with PID 17776 (C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo\target\classes started by jbabu001 in C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo)
+2018-05-24 15:18:52.464  INFO 17776 --- [main] org.cisco.demo.RestDemoApplication       : No active profile set, falling back to default profiles: default
+2018-05-24 15:18:52.590  INFO 17776 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6293abcc: startup date [Thu May 24 15:18:52 EDT 2018]; root of context hierarchy
+2018-05-24 15:18:56.843  INFO 17776 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-05-24 15:18:56.876  INFO 17776 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-24 15:18:56.879  INFO 17776 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-05-24 15:18:57.432  INFO 17776 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-24 15:18:57.433  INFO 17776 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4852 ms
+2018-05-24 15:18:58.019  INFO 17776 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-24 15:18:58.021  INFO 17776 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-24 15:18:58.022  INFO 17776 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-24 15:18:58.022  INFO 17776 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-24 15:18:58.025  INFO 17776 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-05-24 15:18:58.027  INFO 17776 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-24 15:18:58.163  WARN 17776 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientController': Unsatisfied dependency expressed through field 'clientservice'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.cisco.demo.service.ClientService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-05-24 15:18:58.173  INFO 17776 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-05-24 15:18:58.209  INFO 17776 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-05-24 15:18:58.423 ERROR 17776 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field clientservice in org.cisco.demo.controllers.ClientController required a bean of type 'org.cisco.demo.service.ClientService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.cisco.demo.service.ClientService' in your configuration.
+
+2018-05-24 15:20:54.655  INFO 1348 --- [main] org.cisco.demo.RestDemoApplication       : Starting RestDemoApplication on JBABU001055241 with PID 1348 (C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo\target\classes started by jbabu001 in C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo)
+2018-05-24 15:20:54.664  INFO 1348 --- [main] org.cisco.demo.RestDemoApplication       : No active profile set, falling back to default profiles: default
+2018-05-24 15:20:54.801  INFO 1348 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6293abcc: startup date [Thu May 24 15:20:54 EDT 2018]; root of context hierarchy
+2018-05-24 15:20:59.048  INFO 1348 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-05-24 15:20:59.090  INFO 1348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-24 15:20:59.094  INFO 1348 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-05-24 15:20:59.713  INFO 1348 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-24 15:20:59.716  INFO 1348 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4923 ms
+2018-05-24 15:21:00.581  INFO 1348 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-24 15:21:00.586  INFO 1348 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-24 15:21:00.588  INFO 1348 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-24 15:21:00.589  INFO 1348 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-24 15:21:00.600  INFO 1348 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-05-24 15:21:00.604  INFO 1348 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-24 15:21:01.507  INFO 1348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/objects],methods=[POST],produces=[application/json]}" onto public java.util.Map<java.lang.String, java.lang.String> org.cisco.demo.controllers.ClientController.getUserbyId(java.util.Map<java.lang.String, java.lang.String>)
+2018-05-24 15:21:01.521  INFO 1348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-24 15:21:01.525  INFO 1348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-24 15:21:01.528  INFO 1348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-24 15:21:01.535  INFO 1348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-24 15:21:01.537  INFO 1348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-24 15:21:01.868  INFO 1348 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-24 15:21:02.403  INFO 1348 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6293abcc: startup date [Thu May 24 15:20:54 EDT 2018]; root of context hierarchy
+2018-05-24 15:21:02.595  INFO 1348 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 15:21:02.596  INFO 1348 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 15:21:02.684  INFO 1348 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 15:21:03.202  INFO 1348 --- [main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 42877172-b093-4802-9df6-4a1654ebfd34
+
+2018-05-24 15:21:03.393  INFO 1348 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2018-05-24 15:21:03.574  INFO 1348 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a62c7cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a2ef072, org.springframework.security.web.header.HeaderWriterFilter@a2ddf26, org.springframework.security.web.authentication.logout.LogoutFilter@44b194fe, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7cd4a4d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f00f851, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16e7b402, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7661b5a, org.springframework.security.web.session.SessionManagementFilter@7a8406c2, org.springframework.security.web.access.ExceptionTranslationFilter@1e86a5a7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4ee6291f]
+2018-05-24 15:21:03.774  INFO 1348 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-24 15:21:03.808  INFO 1348 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-05-24 15:21:03.810  INFO 1348 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-05-24 15:21:03.906  INFO 1348 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-05-24 15:21:04.005  INFO 1348 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-05-24 15:21:04.685  INFO 1348 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-05-24 15:21:04.699  INFO 1348 --- [main] org.cisco.demo.RestDemoApplication       : Started RestDemoApplication in 10.779 seconds (JVM running for 12.873)
+2018-05-24 15:21:26.309  INFO 1348 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-24 15:21:26.312  INFO 1348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-24 15:21:26.424  INFO 1348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 111 ms
+2018-05-24 15:24:04.005  INFO 1348 --- [RMI TCP Connection(8)-10.14.82.9] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-05-24 15:24:04.007  INFO 1348 --- [RMI TCP Connection(8)-10.14.82.9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6293abcc: startup date [Thu May 24 15:20:54 EDT 2018]; root of context hierarchy
+2018-05-24 15:24:04.012  INFO 1348 --- [RMI TCP Connection(8)-10.14.82.9] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-05-24 15:24:04.017  INFO 1348 --- [RMI TCP Connection(8)-10.14.82.9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-05-24 15:24:16.766  INFO 11804 --- [main] org.cisco.demo.RestDemoApplication       : Starting RestDemoApplication on JBABU001055241 with PID 11804 (C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo\target\classes started by jbabu001 in C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo)
+2018-05-24 15:24:16.777  INFO 11804 --- [main] org.cisco.demo.RestDemoApplication       : No active profile set, falling back to default profiles: default
+2018-05-24 15:24:16.921  INFO 11804 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@197d671: startup date [Thu May 24 15:24:16 EDT 2018]; root of context hierarchy
+2018-05-24 15:24:21.291  INFO 11804 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-05-24 15:24:21.321  INFO 11804 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-24 15:24:21.325  INFO 11804 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-05-24 15:24:21.722  INFO 11804 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-24 15:24:21.724  INFO 11804 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4809 ms
+2018-05-24 15:24:22.157  INFO 11804 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-24 15:24:22.164  INFO 11804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-24 15:24:22.166  INFO 11804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-24 15:24:22.167  INFO 11804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-24 15:24:22.167  INFO 11804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-24 15:24:23.047  INFO 11804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/objects],methods=[POST],produces=[application/json]}" onto public java.util.Map<java.lang.String, java.lang.String> org.cisco.demo.controllers.ClientController.getUserbyId(java.util.Map<java.lang.String, java.lang.String>)
+2018-05-24 15:24:23.060  INFO 11804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-24 15:24:23.064  INFO 11804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-24 15:24:23.067  INFO 11804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-24 15:24:23.072  INFO 11804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-24 15:24:23.074  INFO 11804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-24 15:24:23.374  INFO 11804 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-24 15:24:23.747  INFO 11804 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@197d671: startup date [Thu May 24 15:24:16 EDT 2018]; root of context hierarchy
+2018-05-24 15:24:23.902  INFO 11804 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 15:24:23.904  INFO 11804 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 15:24:23.973  INFO 11804 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 15:24:24.260  INFO 11804 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-24 15:24:24.383  INFO 11804 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-05-24 15:24:24.385  INFO 11804 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-05-24 15:24:24.457  INFO 11804 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-05-24 15:24:24.569  INFO 11804 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-05-24 15:24:25.014  INFO 11804 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-05-24 15:24:25.025  INFO 11804 --- [main] org.cisco.demo.RestDemoApplication       : Started RestDemoApplication in 8.94 seconds (JVM running for 11.09)
+2018-05-24 15:24:28.340  INFO 11804 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-24 15:24:28.342  INFO 11804 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-24 15:24:28.401  INFO 11804 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 58 ms
+2018-05-24 15:26:41.107  INFO 11804 --- [RMI TCP Connection(9)-10.14.82.9] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-05-24 15:26:41.112  INFO 11804 --- [RMI TCP Connection(9)-10.14.82.9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@197d671: startup date [Thu May 24 15:24:16 EDT 2018]; root of context hierarchy
+2018-05-24 15:26:41.130  INFO 11804 --- [RMI TCP Connection(9)-10.14.82.9] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-05-24 15:26:41.138  INFO 11804 --- [RMI TCP Connection(9)-10.14.82.9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-05-24 15:26:49.092  INFO 17112 --- [main] org.cisco.demo.RestDemoApplication       : Starting RestDemoApplication on JBABU001055241 with PID 17112 (C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo\target\classes started by jbabu001 in C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo)
+2018-05-24 15:26:49.101  INFO 17112 --- [main] org.cisco.demo.RestDemoApplication       : No active profile set, falling back to default profiles: default
+2018-05-24 15:26:49.232  INFO 17112 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@197d671: startup date [Thu May 24 15:26:49 EDT 2018]; root of context hierarchy
+2018-05-24 15:26:53.450  INFO 17112 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-05-24 15:26:53.490  INFO 17112 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-24 15:26:53.493  INFO 17112 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-05-24 15:26:53.969  INFO 17112 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-24 15:26:53.972  INFO 17112 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4746 ms
+2018-05-24 15:26:54.435  INFO 17112 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-24 15:26:54.443  INFO 17112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-24 15:26:54.445  INFO 17112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-24 15:26:54.446  INFO 17112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-24 15:26:54.448  INFO 17112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-24 15:26:55.427  INFO 17112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/objects],methods=[POST],produces=[application/json]}" onto public java.util.Map<java.lang.String, java.lang.String> org.cisco.demo.controllers.ClientController.create(java.util.Map<java.lang.String, java.lang.String>)
+2018-05-24 15:26:55.439  INFO 17112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-24 15:26:55.444  INFO 17112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-24 15:26:55.447  INFO 17112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-24 15:26:55.453  INFO 17112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-24 15:26:55.454  INFO 17112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-24 15:26:55.888  INFO 17112 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-24 15:26:56.465  INFO 17112 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@197d671: startup date [Thu May 24 15:26:49 EDT 2018]; root of context hierarchy
+2018-05-24 15:26:56.627  INFO 17112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 15:26:56.628  INFO 17112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 15:26:56.691  INFO 17112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 15:26:56.987  INFO 17112 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-24 15:26:57.007  INFO 17112 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-05-24 15:26:57.008  INFO 17112 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-05-24 15:26:57.068  INFO 17112 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-05-24 15:26:57.179  INFO 17112 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-05-24 15:26:57.941  INFO 17112 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-05-24 15:26:57.955  INFO 17112 --- [main] org.cisco.demo.RestDemoApplication       : Started RestDemoApplication in 9.62 seconds (JVM running for 12.626)
+2018-05-24 15:27:55.696  INFO 17112 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-24 15:27:55.699  INFO 17112 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-24 15:27:55.765  INFO 17112 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 65 ms
+2018-05-24 15:29:09.912  INFO 17112 --- [RMI TCP Connection(9)-10.14.82.9] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-05-24 15:29:09.914  INFO 17112 --- [RMI TCP Connection(9)-10.14.82.9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@197d671: startup date [Thu May 24 15:26:49 EDT 2018]; root of context hierarchy
+2018-05-24 15:29:09.922  INFO 17112 --- [RMI TCP Connection(9)-10.14.82.9] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-05-24 15:29:09.929  INFO 17112 --- [RMI TCP Connection(9)-10.14.82.9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-05-24 15:29:17.558  INFO 16748 --- [main] o.c.d.RestDemoApplication                : Starting RestDemoApplication on JBABU001055241 with PID 16748 (C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo\target\classes started by jbabu001 in C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo)
+%xwEx2018-05-24 15:29:17.571  INFO 16748 --- [main] o.c.d.RestDemoApplication                : No active profile set, falling back to default profiles: default
+%xwEx2018-05-24 15:29:17.684  INFO 16748 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5939a379: startup date [Thu May 24 15:29:17 EDT 2018]; root of context hierarchy
+%xwEx2018-05-24 15:29:21.868  INFO 16748 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+%xwEx2018-05-24 15:29:22.299  INFO 16748 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 4620 ms
+%xwEx2018-05-24 15:29:22.716  INFO 16748 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+%xwEx2018-05-24 15:29:22.723  INFO 16748 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+%xwEx2018-05-24 15:29:22.724  INFO 16748 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+%xwEx2018-05-24 15:29:22.725  INFO 16748 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+%xwEx2018-05-24 15:29:22.727  INFO 16748 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+%xwEx2018-05-24 15:29:22.823  WARN 16748 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientController' defined in file [C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo\target\classes\org\cisco\demo\controllers\ClientController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.cisco.demo.controllers.ClientController]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/apache/logging/log4j/util/ReflectionUtil
+%xwEx2018-05-24 15:29:22.876  INFO 16748 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+%xwEx2018-05-24 15:29:22.891 ERROR 16748 --- [main] o.s.b.SpringApplication                  : Application startup failed
+%xwEx org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientController' defined in file [C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo\target\classes\org\cisco\demo\controllers\ClientController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.cisco.demo.controllers.ClientController]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/apache/logging/log4j/util/ReflectionUtil
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1155) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.cisco.demo.RestDemoApplication.main(RestDemoApplication.java:10) [classes/:?]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.cisco.demo.controllers.ClientController]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/apache/logging/log4j/util/ReflectionUtil
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:154) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1147) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 17 more
+Caused by: java.lang.NoClassDefFoundError: org/apache/logging/log4j/util/ReflectionUtil
+	at org.apache.logging.slf4j.Log4jLoggerFactory.getContext(Log4jLoggerFactory.java:42) ~[log4j-slf4j-impl-2.1.jar:2.1]
+	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:46) ~[log4j-api-2.11.0.jar:2.11.0]
+	at org.apache.logging.slf4j.Log4jLoggerFactory.getLogger(Log4jLoggerFactory.java:29) ~[log4j-slf4j-impl-2.1.jar:2.1]
+	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:358) ~[slf4j-api-1.7.25.jar:1.7.25]
+	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:383) ~[slf4j-api-1.7.25.jar:1.7.25]
+	at org.cisco.demo.controllers.ClientController.<init>(ClientController.java:19) ~[classes/:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_161]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_161]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:142) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1147) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 17 more
+Caused by: java.lang.ClassNotFoundException: org.apache.logging.log4j.util.ReflectionUtil
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_161]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_161]
+	at org.apache.logging.slf4j.Log4jLoggerFactory.getContext(Log4jLoggerFactory.java:42) ~[log4j-slf4j-impl-2.1.jar:2.1]
+	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:46) ~[log4j-api-2.11.0.jar:2.11.0]
+	at org.apache.logging.slf4j.Log4jLoggerFactory.getLogger(Log4jLoggerFactory.java:29) ~[log4j-slf4j-impl-2.1.jar:2.1]
+	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:358) ~[slf4j-api-1.7.25.jar:1.7.25]
+	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:383) ~[slf4j-api-1.7.25.jar:1.7.25]
+	at org.cisco.demo.controllers.ClientController.<init>(ClientController.java:19) ~[classes/:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_161]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_161]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:142) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1147) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 17 more
+2018-05-24 15:36:55.983  INFO 16912 --- [main] o.c.d.RestDemoApplication                : Starting RestDemoApplication on JBABU001055241 with PID 16912 (C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo\target\classes started by jbabu001 in C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo)
+2018-05-24 15:36:55.995  INFO 16912 --- [main] o.c.d.RestDemoApplication                : No active profile set, falling back to default profiles: default
+2018-05-24 15:36:56.152  INFO 16912 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68267da0: startup date [Thu May 24 15:36:56 EDT 2018]; root of context hierarchy
+2018-05-24 15:37:00.160  INFO 16912 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-05-24 15:37:00.184  INFO 16912 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-05-24 15:37:00.188  INFO 16912 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-05-24 15:37:00.581  INFO 16912 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-05-24 15:37:00.583  INFO 16912 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 4439 ms
+2018-05-24 15:37:00.992  INFO 16912 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-24 15:37:01.000  INFO 16912 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-24 15:37:01.001  INFO 16912 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-24 15:37:01.002  INFO 16912 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-24 15:37:01.003  INFO 16912 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-24 15:37:01.891  INFO 16912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/objects],methods=[POST],produces=[application/json]}" onto public java.util.Map<java.lang.String, java.lang.String> org.cisco.demo.controllers.ClientController.create(java.util.Map<java.lang.String, java.lang.String>)
+2018-05-24 15:37:01.905  INFO 16912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-24 15:37:01.908  INFO 16912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-24 15:37:01.910  INFO 16912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-24 15:37:01.916  INFO 16912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-24 15:37:01.918  INFO 16912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-24 15:37:02.369  INFO 16912 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-24 15:37:02.796  INFO 16912 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68267da0: startup date [Thu May 24 15:36:56 EDT 2018]; root of context hierarchy
+2018-05-24 15:37:02.951  INFO 16912 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 15:37:02.952  INFO 16912 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 15:37:03.021  INFO 16912 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 15:37:03.316  INFO 16912 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-24 15:37:03.337  INFO 16912 --- [main] o.s.c.s.DefaultLifecycleProcessor        : Starting beans in phase 2147483647
+2018-05-24 15:37:03.338  INFO 16912 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-05-24 15:37:03.480  INFO 16912 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-05-24 15:37:04.001  INFO 16912 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-05-24 15:37:04.969  INFO 16912 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-05-24 15:37:04.982  INFO 16912 --- [main] o.c.d.RestDemoApplication                : Started RestDemoApplication in 9.824 seconds (JVM running for 12.264)
+2018-05-24 15:38:14.816  INFO 16912 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-24 15:38:14.818  INFO 16912 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-24 15:38:14.897  INFO 16912 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 77 ms
+2018-05-24 15:41:05.896  INFO 16912 --- [RMI TCP Connection(9)-10.14.82.9] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-05-24 15:41:05.899  INFO 16912 --- [RMI TCP Connection(9)-10.14.82.9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68267da0: startup date [Thu May 24 15:36:56 EDT 2018]; root of context hierarchy
+2018-05-24 15:41:05.907  INFO 16912 --- [RMI TCP Connection(9)-10.14.82.9] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 2147483647
+2018-05-24 15:41:05.911  INFO 16912 --- [RMI TCP Connection(9)-10.14.82.9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-05-24 15:41:12.910  INFO 5044 --- [main] o.c.d.RestDemoApplication                : Starting RestDemoApplication on JBABU001055241 with PID 5044 (C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo\target\classes started by jbabu001 in C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo)
+2018-05-24 15:41:12.919  INFO 5044 --- [main] o.c.d.RestDemoApplication                : No active profile set, falling back to default profiles: default
+2018-05-24 15:41:13.044  INFO 5044 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2638011: startup date [Thu May 24 15:41:13 EDT 2018]; root of context hierarchy
+2018-05-24 15:41:16.990  INFO 5044 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-05-24 15:41:17.015  INFO 5044 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-05-24 15:41:17.019  INFO 5044 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-05-24 15:41:17.471  INFO 5044 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-05-24 15:41:17.473  INFO 5044 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 4436 ms
+2018-05-24 15:41:17.875  INFO 5044 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-24 15:41:17.882  INFO 5044 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-24 15:41:17.883  INFO 5044 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-24 15:41:17.884  INFO 5044 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-24 15:41:17.885  INFO 5044 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-24 15:41:18.695  INFO 5044 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/objects],methods=[POST],produces=[application/json]}" onto public java.util.Map<java.lang.String, java.lang.String> org.cisco.demo.controllers.ClientController.create(java.util.Map<java.lang.String, java.lang.String>)
+2018-05-24 15:41:18.710  INFO 5044 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-24 15:41:18.713  INFO 5044 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-24 15:41:18.716  INFO 5044 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-24 15:41:18.722  INFO 5044 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-24 15:41:18.723  INFO 5044 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-24 15:41:19.056  INFO 5044 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-24 15:41:19.451  INFO 5044 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2638011: startup date [Thu May 24 15:41:13 EDT 2018]; root of context hierarchy
+2018-05-24 15:41:19.604  INFO 5044 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 15:41:19.605  INFO 5044 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 15:41:19.675  INFO 5044 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 15:41:19.962  INFO 5044 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-24 15:41:19.978  INFO 5044 --- [main] o.s.c.s.DefaultLifecycleProcessor        : Starting beans in phase 2147483647
+2018-05-24 15:41:19.979  INFO 5044 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-05-24 15:41:20.043  INFO 5044 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-05-24 15:41:20.558  INFO 5044 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-05-24 15:41:20.947  INFO 5044 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-05-24 15:41:20.964  INFO 5044 --- [main] o.c.d.RestDemoApplication                : Started RestDemoApplication in 8.882 seconds (JVM running for 11.359)
+2018-05-24 15:41:48.331  INFO 5044 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-24 15:41:48.332  INFO 5044 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-24 15:41:48.403  INFO 5044 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 70 ms
+2018-05-24 16:02:14.135  INFO 5044 --- [RMI TCP Connection(27)-10.14.82.9] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-05-24 16:02:14.138  INFO 5044 --- [RMI TCP Connection(27)-10.14.82.9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2638011: startup date [Thu May 24 15:41:13 EDT 2018]; root of context hierarchy
+2018-05-24 16:02:14.149  INFO 5044 --- [RMI TCP Connection(27)-10.14.82.9] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 2147483647
+2018-05-24 16:02:14.159  INFO 5044 --- [RMI TCP Connection(27)-10.14.82.9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-05-24 16:02:24.481  INFO 14864 --- [main] o.c.d.RestDemoApplication                : Starting RestDemoApplication on JBABU001055241 with PID 14864 (C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo\target\classes started by jbabu001 in C:\Users\Jbabu001\Documents\workspace-sts-3.7.3.RELEASE\RestDemo)
+2018-05-24 16:02:24.491  INFO 14864 --- [main] o.c.d.RestDemoApplication                : No active profile set, falling back to default profiles: default
+2018-05-24 16:02:24.641  INFO 14864 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2638011: startup date [Thu May 24 16:02:24 EDT 2018]; root of context hierarchy
+2018-05-24 16:02:28.433  INFO 14864 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-05-24 16:02:28.454  INFO 14864 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-05-24 16:02:28.459  INFO 14864 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-05-24 16:02:28.890  INFO 14864 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-05-24 16:02:28.893  INFO 14864 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 4258 ms
+2018-05-24 16:02:29.281  INFO 14864 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-24 16:02:29.289  INFO 14864 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-24 16:02:29.290  INFO 14864 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-24 16:02:29.291  INFO 14864 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-24 16:02:29.292  INFO 14864 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-24 16:02:30.065  INFO 14864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/objects],methods=[POST],produces=[application/json]}" onto public java.util.Map<java.lang.String, java.lang.String> org.cisco.demo.controllers.ClientController.create(java.util.Map<java.lang.String, java.lang.String>)
+2018-05-24 16:02:30.077  INFO 14864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-24 16:02:30.079  INFO 14864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-24 16:02:30.081  INFO 14864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-24 16:02:30.086  INFO 14864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-24 16:02:30.088  INFO 14864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-24 16:02:30.385  INFO 14864 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-24 16:02:30.839  INFO 14864 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2638011: startup date [Thu May 24 16:02:24 EDT 2018]; root of context hierarchy
+2018-05-24 16:02:30.990  INFO 14864 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 16:02:30.991  INFO 14864 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 16:02:31.053  INFO 14864 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 16:02:31.332  INFO 14864 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-24 16:02:31.352  INFO 14864 --- [main] o.s.c.s.DefaultLifecycleProcessor        : Starting beans in phase 2147483647
+2018-05-24 16:02:31.353  INFO 14864 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-05-24 16:02:31.427  INFO 14864 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-05-24 16:02:31.690  INFO 14864 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-05-24 16:02:32.062  INFO 14864 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-05-24 16:02:32.072  INFO 14864 --- [main] o.c.d.RestDemoApplication                : Started RestDemoApplication in 8.394 seconds (JVM running for 10.854)
+2018-05-24 16:04:04.619  INFO 14864 --- [RMI TCP Connection(8)-10.14.82.9] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-05-24 16:04:04.620  INFO 14864 --- [RMI TCP Connection(8)-10.14.82.9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2638011: startup date [Thu May 24 16:02:24 EDT 2018]; root of context hierarchy
+2018-05-24 16:04:04.624  INFO 14864 --- [RMI TCP Connection(8)-10.14.82.9] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 2147483647
+2018-05-24 16:04:04.627  INFO 14864 --- [RMI TCP Connection(8)-10.14.82.9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
