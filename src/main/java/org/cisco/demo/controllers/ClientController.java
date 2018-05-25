@@ -60,5 +60,4 @@ public class ClientController {
 		logger.info("ClientController : getObjects");
 		return clientservice.getObjects();
 	}
-
 }
