@@ -1,3 +1,5 @@
+org\cisco\demo\service\ClientServiceImplTest$ClientServiceImplTestContextConfiguration.class
 org\cisco\demo\controllers\ClientControllerTest.class
+org\cisco\demo\service\ClientServiceImplTest.class
 org\cisco\demo\controllers\ClientControllerITT.class
 org\cisco\demo\RestDemoApplicationTests.class

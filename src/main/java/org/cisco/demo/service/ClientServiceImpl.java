@@ -29,7 +29,7 @@ public class ClientServiceImpl implements ClientService {
 		final String uuid = UUID.randomUUID().toString();
 		jsonObj.put("uid", uuid);
 		HashMap<String, String> newJsonObj = clientDao.updateStore(jsonObj,uuid);
-		return jsonObj;
+		return newJsonObj;
 	}
 
 	@Override

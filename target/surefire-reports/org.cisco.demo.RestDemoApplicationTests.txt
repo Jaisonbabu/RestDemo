@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.cisco.demo.RestDemoApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.883 sec - in org.cisco.demo.RestDemoApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.949 sec - in org.cisco.demo.RestDemoApplicationTests
